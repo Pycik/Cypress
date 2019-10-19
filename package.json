@@ -1,18 +1,28 @@
 {
-  "name": "autototests",
-  "version": "1.0.0",
-  "description": "tests",
+  "name": "cypress-example-docker-circle",
+  "version": "3.0.0",
+  "description": "Cypress + Docker + CircleCI = ❤️",
   "main": "index.js",
-  "dependencies": {
-    "faker": "^4.1.0",
-    "puppeteer": "^1.20.0"
-  },
-  "devDependencies": {
-    "cypress": "^3.4.1"
-  },
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test-junit": "cypress run --reporter junit --reporter-options 'mochaFile=junit-results/my-test-output.xml'",
+    "test-multiple": "cypress run --reporter mocha-multi-reporters --reporter-options configFile=config.json"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pycik/Cypress"
+  },
+  "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cypress-io/cypress-example-docker-circle/issues"
+  },
+  "homepage": "https://github.com/cypress-io/cypress-example-docker-circle#readme",
+  "devDependencies": {
+    "cypress": "3.3.1",
+    "mocha": "^4.0.1",
+    "mocha-junit-reporter": "^1.13.0",
+    "mocha-multi-reporters": "^1.1.4"
+  }
 }
