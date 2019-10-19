@@ -1,5 +1,6 @@
 .DS_Store
 cypress/videos/
+cypress/screenshots/
 test-results.xml
 results/
 node_modules/
@@ -7,3 +8,4 @@ xunit.xml
 junit-results/
 multiple-results/
 src/
+fixtures/

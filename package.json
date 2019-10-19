@@ -1,7 +1,7 @@
 {
-  "name": "cypress-example-docker-circle",
-  "version": "3.0.0",
-  "description": "Cypress + Docker + CircleCI = ❤️",
+  "name": "Cypress",
+  "version": "1.0.0",
+  "description": "Cypress",
   "main": "index.js",
   "private": true,
   "scripts": {

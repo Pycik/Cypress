@@ -5,5 +5,8 @@ To run tests:
 
 ```
   npm install
-  node_modules\.bin\cypress open
+  
+  1) npm run test-junit
+  2) npm run test-multiple
+
 ```
