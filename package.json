@@ -1,6 +1,6 @@
 {
   "name": "Cypress",
-  "version": "1.0.0",
+  "version": "3.4.1",
   "description": "Cypress",
   "main": "index.js",
   "private": true,
@@ -16,11 +16,11 @@
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cypress-io/cypress-example-docker-circle/issues"
+    "url": "https://github.com/Pycik/Cypress"
   },
-  "homepage": "https://github.com/cypress-io/cypress-example-docker-circle#readme",
+  "homepage": "https://github.com/Pycik/Cypress#readme",
   "devDependencies": {
-    "cypress": "3.3.1",
+    "cypress": "3.4.1",
     "mocha": "^4.0.1",
     "mocha-junit-reporter": "^1.13.0",
     "mocha-multi-reporters": "^1.1.4"
