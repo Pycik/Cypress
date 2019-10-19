@@ -1,0 +1,9 @@
+.DS_Store
+cypress/videos/
+test-results.xml
+results/
+node_modules/
+xunit.xml
+junit-results/
+multiple-results/
+src/
