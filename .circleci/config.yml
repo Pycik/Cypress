@@ -4,7 +4,7 @@ jobs:
   build:
     docker:
       # the Docker image with Cypress dependencies
-      - image: cypress/base:8      
+      - image: circleci/node:10-browsers   
         environment:
           ## this enables colors in the output
           TERM: xterm
@@ -37,22 +37,5 @@ jobs:
           path: cypress/videos
       - store_artifacts:
           path: cypress/screenshots
-  test:
-    docker:
-     - image: circleci/node:10-browsers
-   steps:
-     - checkout
-     - run:
-         name: Install packages
-         command: npm install
-     - run:
-         name: Running Test Suite
-         command: npm test
-     - store_artifacts:
-          path: output
-workflows:
-  version: 2
-  build_and_test:
-    jobs:
-      - build
-      - test
+
+
