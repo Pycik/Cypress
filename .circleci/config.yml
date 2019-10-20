@@ -5,6 +5,7 @@ jobs:
     docker:
       # the Docker image with Cypress dependencies
       - image: cypress/base:8
+      - image: circleci/node:10-browsers
         environment:
           ## this enables colors in the output
           TERM: xterm
